@@ -1,0 +1,183 @@
+
+.main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    max-height: 900vh;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+img{
+width: 30%;
+height: 100%;
+}
+
+li{
+    color: white;
+}
+    
+
+.main__firstdiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 100%;
+  max-height: 400px;
+  height: 313px;
+  margin-top: 140px;
+}
+
+.main__firstdiv__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: gray;
+    flex-grow: 1;
+    height: 313px;
+}
+
+
+.main__firstdiv__item ul{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.main__firstdiv__buyordelete{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height:313px;
+    width: 10%;
+    
+}
+
+.main__firstdiv__buyordelete__buy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+   
+}
+
+.main__firstdiv__buyordelete__buy:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    color: white;
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.main__firstdiv__buyordelete__delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.main__firstdiv__buyordelete__delete:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    color: white;
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+}
+
+
+
+
+.main__second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 100%;
+    max-height: 400px;
+    height: 313px;
+
+  }
+  
+  .main__second__item{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: gray;
+      flex-grow: 1;
+      height: 313px;
+      
+  }
+
+
+  
+  .main__second__item ul{
+      list-style: none;
+      margin-left: 20px;
+  }
+  
+  .main__second__buyordelete{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height:313px;
+      width: 10%;
+      
+  }
+  
+  .main__second__buyordelete__buy{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      width: 100%;
+      height: 50%;
+     
+  }
+  
+  .main__second__buyordelete__buy:hover{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:black;
+      color: white;
+      width: 100%;
+      height: 50%;
+      cursor: pointer;
+  }
+  
+  .main__second__buyordelete__delete{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50%;
+      cursor: pointer;
+  }
+  
+  .main__second__buyordelete__delete:hover{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:black;
+      color: white;
+      width: 100%;
+      height: 50%;
+      cursor: pointer;
+  }
+  
+

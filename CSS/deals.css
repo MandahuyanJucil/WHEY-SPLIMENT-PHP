@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 400vh;
+    height: 100vh;
+
+}
+
+.main__h1{
+    color: orange;
+    font-size: 200px;
+}
+
