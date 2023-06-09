@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/WHEY SUPPLIMENT/CSS/header-footer.css">
+
 <footer class="footer">
         <div class="footer__firstdiv">
            <div class="footer__firstdiv__h2">
