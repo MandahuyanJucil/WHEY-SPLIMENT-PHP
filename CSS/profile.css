@@ -64,7 +64,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 200px;
     background-image: radial-gradient(rgb(165, 165, 165),rgb(100, 97, 97),black);
     width: 100%;
     min-height: 100vh;

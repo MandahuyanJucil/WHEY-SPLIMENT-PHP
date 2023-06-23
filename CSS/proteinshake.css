@@ -68,6 +68,10 @@ body{
     margin-top: 90px;
     max-height: 700vh;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .main_container{
     display: flex;
@@ -100,6 +104,7 @@ form{
     width: 100px;
     height: 100px;
     margin-top:20px ;
+    mix-blend-mode: multiply;
 }
 
 
@@ -404,4 +409,124 @@ select{
   .btn:hover::after {
    transform: scaleX(1.4) scaleY(1.6);
    opacity: 0;
+  }
+
+
+
+
+
+
+
+
+
+  @media all and (min-width:360px) and (max-width:389px){
+
+    .main__pd{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: auto;
+        height: auto;
+        max-height: 100vh;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        border-radius: 31px;
+        border-radius: 31px;
+        background: #e9e2e6;
+        box-shadow: inset 40px 40px 30px #959193,
+                    inset -40px -40px 30px #ffffff;
+     
+     }
+  }
+
+
+
+  @media all and (min-width:390px) and (max-width:413px){
+
+    .main__firstdiv{
+        margin-top: 120px;
+        max-height: 700vh;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    .main__pd{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: auto;
+        height: auto;
+        max-height: 100vh;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        border-radius: 31px;
+        border-radius: 31px;
+        background: #e9e2e6;
+        box-shadow: inset 40px 40px 30px #959193,
+                    inset -40px -40px 30px #ffffff;
+     
+     }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media all and (min-width:412px) and (max-width:514px){
+
+    .main__firstdiv{
+        margin-top: 120px;
+        max-height: 700vh;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    .main__pd{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: auto;
+        height: auto;
+        max-height: 100vh;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        border-radius: 31px;
+        border-radius: 31px;
+        background: #e9e2e6;
+        box-shadow: inset 40px 40px 30px #959193,
+                    inset -40px -40px 30px #ffffff;
+     
+     }
   }

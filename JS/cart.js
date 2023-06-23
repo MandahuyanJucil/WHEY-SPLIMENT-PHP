@@ -1,26 +1,20 @@
-let checkout = document.querySelector(".checkout");
-let main__checkout = document.querySelector(".main__checkout");
-let cart = document.querySelector("#cart");
-let checkin = document.querySelector("#checkin");
+let main__checkout = document.querySelector('.main__checkout');
+let main__tabledata = document.querySelector('.main__tabledata');
+let check = document.querySelector("#check");
+let checkclose = document.querySelector("#checkclose");
 
 
-
-
-
-
-
-
-
-
-
-checkin.onclick=()=>{
-
+check.onclick=()=>{
     main__checkout.classList.add("checkoutclose");
 }
 
 
-checkout.onclick=()=>{
+checkclose.onclick=()=>{
     main__checkout.classList.remove("checkoutclose");
-   
 }
+
+
+
+
+
 

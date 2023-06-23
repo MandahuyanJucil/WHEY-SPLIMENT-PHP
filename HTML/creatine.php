@@ -14,49 +14,53 @@ include 'inc/header.php'
 
 
 
-  
-<?php 
-
-
-$connect = mysqli_connect("localhost","root","","cart_item");
-
-
-if(isset($_POST['add_to_cart'])){
-
-  if(isset($_SESSION['cart'])){
-        $session_array_id = array_column($_SESSION['cart'],"id");
-
-
-
-        if(!in_array($_GET['id'],$session_array_id)){
-          $session_array = array(
-
-            'id'=> $_GET['id'],
-            "name" => $_POST['name'],
-            "price" => $_POST ['price'],
-            "quantity" => $_POST['quantity']
-         );
  
-         $_SESSION['cart'][]=$session_array;
+<?php 
+session_start();
+$product_ids=array();
+/* session_destroy(); */
 
-        }
-      }
-      else{
-        $session_array = array(
+if(filter_input(INPUT_POST,'add_to_cart')){
+    if(isset($_SESSION['shopping_cart'])){
+           $count=count($_SESSION['shopping_cart']);
+           $product_ids=array_column($_SESSION['shopping_cart'],'id');
 
-           'id'=> $_GET['id'],
-           "name" => $_POST['name'],
-           "price" => $_POST ['price'],
-           "quantity" => $_POST['quantity']
-        );
-
-        $_SESSION['cart'][]=$session_array;
-      }
+           if(!in_array(filter_input(INPUT_GET,'id'),$product_ids)){
+              $_SESSION['shopping_cart'][$count]=array(
+              'id'=>filter_input(INPUT_GET,'id'),
+              'name'=>filter_input(INPUT_POST,'name'),
+              'price'=>filter_input(INPUT_POST,'price'),
+              'quantity'=>filter_input(INPUT_POST,'quantity')
+             );
+           }
+           else{
+              for($i=0; $i<count($product_ids); $i++){
+                  if($product_ids[$i]==filter_input(INPUT_GET,'id')){
+                    $_SESSION['shopping_cart'][$i]['quantity']+=filter_input(INPUT_POST,'quantity');  
+                  }
+              }
+           }
+    }
+    else{
+      $_SESSION['shopping_cart'][0]=array(
+       'id'=>filter_input(INPUT_GET,'id'),
+       'name'=>filter_input(INPUT_POST,'name'),
+       'price'=>filter_input(INPUT_POST,'price'),
+       'quantity'=>filter_input(INPUT_POST,'quantity')
+      );
+    }
 }
 
-
-
+    if(filter_input(INPUT_GET,'action')=='delete'){
+      foreach($_SESSION['shopping_cart'] as $key => $product){
+        if($product['id']==filter_input(INPUT_GET,'id')){
+          unset($_SESSION['shopping_cart'][$key]);
+        }
+      }
+      $_SESSION['shopping_cart'] = array_values($_SESSION['shopping_cart']);
+    }
 ?>
+
 
 
 <script defer src="/WHEY SUPPLIMENT/JS/allproduct.js"></script>

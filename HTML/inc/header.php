@@ -97,10 +97,11 @@
 
              <li class="header__seconddiv__li"><a href="/WHEY SUPPLIMENT/HTML/category.php">Categories</a></li>
              <li class="header__seconddiv__li"><a href="/WHEY SUPPLIMENT/HTML/deals.php">Deals</a></li>
-             <li class="header__seconddiv__li"><a href="/WHEY SUPPLIMENT/HTML/branch.php"> Branch</a></li>
              <li class="header__seconddiv__li"><a href="/WHEY SUPPLIMENT/HTML/allproduct.php">All Product</a></li>
          
           
           </ul>
       </div>
     </header>
+
+   

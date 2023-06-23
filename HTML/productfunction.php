@@ -39,9 +39,16 @@ function topcategory($name,$img,$description,$links){
     $category = "
     
     <div class='main__firstdiv__container'>
+
+                <div class='main__contianerpicture'>
                    <h4 class='main__firstdiv__h1'>$name</h4>
                    <img src='/WHEY SUPPLIMENT/IMG/$img' alt='endurancepicute'>
+                     </div>
+
+                   <div class='main__firstdiv__wrapertext'> 
                    <p class='main__pr'>$description</p>
+                   </div>
+
                    <div class='main__firsdiv__shop'>
                   <a href='$links'> <button class='main__firstdiv__btn'><h3>Shop now</h3></button> <a>
                    </div> 

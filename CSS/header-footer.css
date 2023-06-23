@@ -194,7 +194,7 @@ form button{
 
 .header__seconddiv{
     position: fixed;
-    top: 84px;
+    top: 94px;
     left: 0px;
     background-color: black;
     width: 250px;
@@ -324,13 +324,7 @@ a{
 
 
 
-
-
-
-
-
-
-@media all and (max-width:375px){
+@media all and (min-width:360px) and (max-width:374px){
     .header__firstdiv{
         display: flex;
         position: fixed;
@@ -344,11 +338,135 @@ a{
     }
 
     .header__firstdiv__second{
-        margin-left: -50px;
+        margin-left: -65px;
+        margin-right: -65px;
+
     }
         
         .header__firstdiv__second input{
-            width: 20px;
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 30px;
+            background-color: white;
+            border-radius: 15px;
+            
+            
+        }
+            .header__firstdiv__first img{
+                display: none;
+            }
+        
+     #cart{
+        margin-left: -80px;
+     }
+    
+     .header__firstdiv__fifth__h2{
+        display: none;
+     }
+
+     .header__seconddiv{
+        top: 110px;
+        left: 0px;
+        width: 130px;
+        
+    }
+
+    .header__firstdiv__thrid{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color:white;
+        border-radius: 15px;
+        overflow: hidden;
+        width: 100px;
+        background-color: #06cbc8;
+        height: 20px;
+    }
+    .header__firstdiv__thrid input{
+        font-size: 15px;
+        
+    }
+
+    .header__firstdiv__fourth__name{
+       
+
+        color: whitesmoke;
+        margin-left: -170px;
+        font-size: 30px;
+        margin-right: 110px;
+        width: auto;
+        height: 70px;
+        border-radius: 10px;
+        overflow: hidden;
+       
+    }
+    
+
+    .header__firstdiv__fourth__name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #06cbc8;
+        color:white;
+        margin-left: -250px;
+        font-size: 15px;
+        margin-right: 150px;
+        width: 90px;
+        height: 40px;
+        border-radius: 131px;
+    background: #06cbc8;
+    box-shadow: inset -9px 9px 21px #025150,
+                inset 9px -9px 21px #0affff;
+    }
+
+    
+
+    #cart{
+        width: 50px;
+        margin-left: -250px;
+        font-size: 15px;
+        
+    }
+
+    .header__firstdiv__fifth__h2{
+        display: none;
+        margin-right: -50px;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        margin-left: 90px;
+    }
+    
+}
+
+
+
+
+
+@media all and (min-width:375px) and (max-width:389px){
+    .header__firstdiv{
+        display: flex;
+        position: fixed;
+        background-color: whitesmoke;
+        max-height: 50vh;
+        height: 15vh;
+        width:600px;
+        background-color: rgb(31, 28, 28) ;
+        box-shadow: var(--boxsh);
+        top: 0px;
+    }
+
+    .header__firstdiv__second{
+        margin-left: -65px;
+        margin-right: -65px;
+
+    }
+        
+        .header__firstdiv__second input{
+            width: 100%;
             height: 40px;
             border: none;
             outline: none;
@@ -377,6 +495,23 @@ a{
         
     }
 
+    .header__firstdiv__thrid{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color:white;
+        border-radius: 15px;
+        overflow: hidden;
+        width: 100px;
+        background-color: #06cbc8;
+        height: 20px;
+    }
+    .header__firstdiv__thrid input{
+        font-size: 15px;
+        
+    }
+
     .header__firstdiv__fourth__name{
        
 
@@ -390,4 +525,358 @@ a{
         overflow: hidden;
        
     }
+    
+
+    .header__firstdiv__fourth__name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #06cbc8;
+        color:white;
+        margin-left: -250px;
+        font-size: 15px;
+        margin-right: 150px;
+        width: 90px;
+        height: 40px;
+        border-radius: 131px;
+    background: #06cbc8;
+    box-shadow: inset -9px 9px 21px #025150,
+                inset 9px -9px 21px #0affff;
+    }
+
+    
+
+    #cart{
+        width: 50px;
+        margin-left: -250px;
+        font-size: 15px;
+        
+    }
+
+    .header__firstdiv__fifth__h2{
+        display: none;
+        margin-right: -50px;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        margin-left: 90px;
+    }
+    
 }
+
+
+
+@media all and (min-width:390px) and (max-width:413px){
+
+
+    .header__firstdiv{
+        display: flex;
+        position: fixed;
+        background-color: whitesmoke;
+        max-height: 50vh;
+        height: 15vh;
+        width:600px;
+        background-color: rgb(31, 28, 28) ;
+        box-shadow: var(--boxsh);
+        top: 0px;
+    }
+
+    .header__firstdiv__second{
+        margin-left: -65px;
+        margin-right: -65px;
+
+    }
+        
+        .header__firstdiv__second input{
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 30px;
+            background-color: white;
+            border-radius: 15px;
+            
+            
+        }
+            .header__firstdiv__first img{
+                display: none;
+            }
+        
+     #cart{
+        margin-left: -80px;
+     }
+    
+     .header__firstdiv__fifth__h2{
+        display: none;
+     }
+
+     .header__seconddiv{
+        top: 126px;
+        left: 0px;
+        width: 130px;
+        
+    }
+
+    .header__firstdiv__thrid{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color:white;
+        border-radius: 15px;
+        overflow: hidden;
+        width: 100px;
+        background-color: #06cbc8;
+        height: 20px;
+    }
+    .header__firstdiv__thrid input{
+        font-size: 15px;
+        
+    }
+
+    .header__firstdiv__fourth__name{
+       
+
+        color: whitesmoke;
+        margin-left: -170px;
+        font-size: 30px;
+        margin-right: 110px;
+        width: auto;
+        height: 70px;
+        border-radius: 10px;
+        overflow: hidden;
+       
+    }
+    
+
+    .header__firstdiv__fourth__name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #06cbc8;
+        color:white;
+        margin-left: -250px;
+        font-size: 15px;
+        margin-right: 150px;
+        width: 90px;
+        height: 40px;
+        border-radius: 131px;
+    background: #06cbc8;
+    box-shadow: inset -9px 9px 21px #025150,
+                inset 9px -9px 21px #0affff;
+    }
+
+    
+
+    #cart{
+        width: 50px;
+        margin-left: -250px;
+        font-size: 15px;
+        
+    }
+
+    .header__firstdiv__fifth__h2{
+        display: none;
+        margin-right: -50px;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        margin-left: 90px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:412px) and (max-width:514px){
+
+    
+    .header__firstdiv{
+        display: flex;
+        position: fixed;
+        background-color: whitesmoke;
+        max-height: 50vh;
+        height: 15vh;
+        width:600px;
+        background-color: rgb(31, 28, 28) ;
+        box-shadow: var(--boxsh);
+        top: 0px;
+    }
+
+    .header__firstdiv__second{
+        margin-left: -65px;
+        margin-right: -65px;
+
+    }
+        
+        .header__firstdiv__second input{
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 30px;
+            background-color: white;
+            border-radius: 15px;
+            
+            
+        }
+            .header__firstdiv__first img{
+                display: none;
+            }
+        
+     #cart{
+        margin-left: -80px;
+     }
+    
+     .header__firstdiv__fifth__h2{
+        display: none;
+     }
+     
+    
+
+     .header__seconddiv{
+        top: 133px;
+        left: 0px;
+        width: 130px;
+        
+    }
+
+    .header__firstdiv__thrid{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color:white;
+        border-radius: 15px;
+        overflow: hidden;
+        width: 100px;
+        background-color: #06cbc8;
+        height: 20px;
+    }
+    .header__firstdiv__thrid input{
+        font-size: 15px;
+        
+    }
+
+    .header__firstdiv__fourth__name{
+       
+
+        color: whitesmoke;
+        margin-left: -170px;
+        font-size: 30px;
+        margin-right: 110px;
+        width: auto;
+        height: 70px;
+        border-radius: 10px;
+        overflow: hidden;
+       
+    }
+    
+
+    .header__firstdiv__fourth__name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #06cbc8;
+        color:white;
+        margin-left: -250px;
+        font-size: 15px;
+        margin-right: 150px;
+        width: 90px;
+        height: 40px;
+        border-radius: 131px;
+    background: #06cbc8;
+    box-shadow: inset -9px 9px 21px #025150,
+                inset 9px -9px 21px #0affff;
+    }
+
+    
+
+    #cart{
+        width: 50px;
+        margin-left: -250px;
+        font-size: 15px;
+        
+    }
+
+    .header__firstdiv__fifth__h2{
+        display: none;
+        margin-right: -50px;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        margin-left: 90px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

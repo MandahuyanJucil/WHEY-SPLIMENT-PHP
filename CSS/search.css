@@ -44,7 +44,7 @@ img{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-height: 500vh;
+    max-height: 900vh;
     height: 100vh auto;
 }
 
@@ -52,7 +52,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 1700vh;
+    max-height: 9900vh;
     min-height: 100vh;
     height:100vh auto ;
     background-color:gray;
@@ -156,3 +156,103 @@ img{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @media all and (min-width:360px) and (max-width:389px){
+
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-height: 9900vh;
+        height: 100vh auto;
+    }
+    
+    .firstdiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 9900vh;
+        min-height: 100vh;
+        height:100vh auto ;
+        background-color:gray;
+        width:100%;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+   }
+
+
+   
+
+   @media all and (min-width:414px){
+
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-height: 9900vh;
+        height: 100vh auto;
+    }
+    
+    .firstdiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 9900vh;
+        min-height: 100vh;
+        height:100vh auto ;
+        background-color:gray;
+        width:100%;
+        margin-top: 90px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+   }
+
+
+   @media all and (min-width:390px) and (max-width:413px){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-height: 9900vh;
+        height: 100vh auto;
+    }
+    
+    .firstdiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 9900vh;
+        min-height: 100vh;
+        height:100vh auto ;
+        background-color:gray;
+        width:100%;
+        margin-top: 90px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+   }
+
+
+   

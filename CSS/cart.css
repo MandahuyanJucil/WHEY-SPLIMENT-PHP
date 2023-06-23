@@ -33,21 +33,137 @@
 
 }
 
-
-h3{
+a{
     color: black;
 }
+
 .main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     max-height: 900vh;
-    height:auto;
+    min-height: 100vh;
+    height: auto;
     background-image: radial-gradient(black,rgb(39, 36, 36),rgb(55, 45, 45)); 
     
 }
 
+
+.main__wraper{
+    margin-top: 60px;
+    height: 70px;
+    width: 100%;
+background-color: antiquewhite;
+}
+
+table{
+    width: 100%;
+    max-height: 1990;
+    height: auto;
+    background-color: blue;
+}
+
+th{
+    background-color: blanchedalmond;
+    height: 50px;
+    font-size: 20px;
+}
+
+td{
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-height: 100px;
+    height: 40px auto;
+    background-color:blanchedalmond ;
+}
+
+
+.main__tabledata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+}
+
+.main__checkout{
+    display: none;
+    margin-top: -30px;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.093);
+    backdrop-filter:blur(5px);
+    z-index: 3;
+}
+
+.checkoutclose{
+    display: flex;
+}
+
+.close{
+    color: black;
+    height: 50px;
+}
+
+select{
+    background-color: black;
+    color: white;
+    width: 90px;
+}
+
+.paynow{
+background-color: rgb(21, 170, 36);
+color: white;
+height: 30px;
+width: 100%;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .main__list{
     display: flex;
     flex-direction: column;
@@ -62,7 +178,7 @@ h3{
 
 .main__list table{
 
-    margin-top:20px;
+    margin-top:15px;
     width: 100%;
     max-height: 1500vh;
    
@@ -275,4 +391,580 @@ cursor: pointer;
 }
 .total{
     color: blue;
+} */
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:375px) and (max-width:389px){
+
+
+    .notice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:30px; 
+        color: white;
+        height: 100%;
+        width: 100%;
+        margin-top: -400px;
+        margin-bottom: 400px;
+    }
+
+
+.main__list table{
+
+    margin-top:20px;
+    width: 100%;
+    max-height: 1500vh;
+    font-size: 10px;
+   
+}
+
+.main__list th{
+background-color: lightgray;
+height: 30px;
+}
+
+.main__list td{
+   
+background-color: whitesmoke;
+ height: 30px;
+}
+
+
+
+.main__delteall button{
+    font-size: 10px;
+    font-weight: bolder;
+    border: black solid 2px;
+    background-color: red;
+    color: black;
+    height: 25px;
+    width: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main__trash i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    color: black;
+    background-color: red;
+    cursor: pointer; 
+    border-radius: 10px;
+}
+
+.main__buynow{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main__buynow h3{
+background-color:green;
+color: white;
+width: 90px;
+height: 30px;
+margin-bottom: 15px;
+cursor: pointer;
+font-size: 15px;
+}
+
+
+.main__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    max-height: 900vh;
+    height: 100vh auto;
+    min-height: 100vh;
+}
+
+.main__list__check{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-height: 900vh;
+    height: 100vh;  
+    font-size: 10px;
+}
+
+.main__list__check table{
+     margin-top: 40px;
+    background-color: blue;
+    width: 100%;
+    max-height: 1500vh;
+}
+
+.main__list__check th{
+    background-color: lightgray;
+    height: 30px;
+}
+
+.main__list__check td{
+   
+    background-color: whitesmoke;
+    height: 30px;
+}
+
+.main__payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color:blue;
+    height: 50px;
+    
+}
+
+.paynow{
+    margin-right: 30px;
+   margin-top: -20px;
+
+}
+
+.main__payment select{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.main__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    margin-bottom: 20px;
+
+}
+
+.main__check h3{
+    background-color:green;
+    color: white;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+   
+    margin-left: -100px;
+    margin-right:10px ;
+    font-size: 10px;
+    }
+
+    .checkout{
+    
+     margin-right: 200px;
+   
+    }
+    
+    .paybowpt{
+        margin-right: -500px;
+    }
+   
+    .main__check a {
+      
+        width: 100px;
+    }
+   
+}
+
+@media all and (min-width:360px) and (max-width:413px){
+
+    .notice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:30px; 
+        color: white;
+        height: 100%;
+        width: 100%;
+        margin-top: -400px;
+        margin-bottom: 400px;
+    }
+
+
+.main__list table{
+
+    margin-top:40px;
+    width: 100%;
+    max-height: 1500vh;
+    font-size: 10px;
+   
+}
+
+.main__list th{
+background-color: lightgray;
+height: 30px;
+}
+
+.main__list td{
+   
+background-color: whitesmoke;
+ height: 30px;
+}
+
+
+
+.main__delteall button{
+    font-size: 10px;
+    font-weight: bolder;
+    border: black solid 2px;
+    background-color: red;
+    color: black;
+    height: 25px;
+    width: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main__trash i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    color: black;
+    background-color: red;
+    cursor: pointer; 
+    border-radius: 10px;
+}
+
+.main__buynow{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main__buynow h3{
+background-color:green;
+color: white;
+width: 90px;
+height: 30px;
+margin-bottom: 15px;
+cursor: pointer;
+font-size: 15px;
+}
+
+
+.main__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    max-height: 900vh;
+    height: 100vh auto;
+    min-height: 100vh;
+}
+
+.main__list__check{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-height: 900vh;
+    height: 100vh;  
+    font-size: 10px;
+}
+
+.main__list__check table{
+     margin-top: 40px;
+    background-color: blue;
+    width: 100%;
+    max-height: 1500vh;
+}
+
+.main__list__check th{
+    background-color: lightgray;
+    height: 30px;
+}
+
+.main__list__check td{
+   
+    background-color: whitesmoke;
+    height: 30px;
+}
+
+.main__payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color:blue;
+    height: 50px;
+    
+}
+
+.paynow{
+    margin-right: 30px;
+   margin-top: -20px;
+
+}
+
+.main__payment select{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.main__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    margin-bottom: 20px;
+
+}
+
+.main__check h3{
+    background-color:green;
+    color: white;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+   
+    margin-left: -100px;
+    margin-right:10px ;
+    font-size: 10px;
+    }
+
+    .checkout{
+    
+     margin-right: 200px;
+   
+    }
+    
+    .paybowpt{
+        margin-right: -500px;
+    }
+   
+    .main__check a {
+      
+        width: 100px;
+    }
+
+
+}
+
+
+
+@media all and (min-width:412px) and (max-width:514px){
+
+
+    .notice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:30px; 
+        color: white;
+        height: 100%;
+        width: 100%;
+        margin-top: -400px;
+        margin-bottom: 400px;
+    }
+
+
+.main__list table{
+
+    margin-top:50px;
+    width: 100%;
+    max-height: 1500vh;
+    font-size: 10px;
+   
+}
+
+.main__list th{
+background-color: lightgray;
+height: 30px;
+}
+
+.main__list td{
+   
+background-color: whitesmoke;
+ height: 30px;
+}
+
+
+
+.main__delteall button{
+    font-size: 10px;
+    font-weight: bolder;
+    border: black solid 2px;
+    background-color: red;
+    color: black;
+    height: 25px;
+    width: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main__trash i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    color: black;
+    background-color: red;
+    cursor: pointer; 
+    border-radius: 10px;
+}
+
+.main__buynow{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main__buynow h3{
+background-color:green;
+color: white;
+width: 90px;
+height: 30px;
+margin-bottom: 15px;
+cursor: pointer;
+font-size: 15px;
+}
+
+
+.main__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    max-height: 900vh;
+    height: 100vh auto;
+    min-height: 100vh;
+}
+
+.main__list__check{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-height: 900vh;
+    height: 100vh;  
+    font-size: 10px;
+}
+
+.main__list__check table{
+     margin-top: 40px;
+    background-color: blue;
+    width: 100%;
+    max-height: 1500vh;
+}
+
+.main__list__check th{
+    background-color: lightgray;
+    height: 30px;
+}
+
+.main__list__check td{
+   
+    background-color: whitesmoke;
+    height: 30px;
+}
+
+.main__payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color:blue;
+    height: 50px;
+    
+}
+
+.paynow{
+    margin-right: 30px;
+   margin-top: -20px;
+
+}
+
+.main__payment select{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.main__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    margin-bottom: 20px;
+
+}
+
+.main__check h3{
+    background-color:green;
+    color: white;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+   
+    margin-left: -100px;
+    margin-right:10px ;
+    font-size: 10px;
+    }
+
+    .checkout{
+    
+     margin-right: 200px;
+   
+    }
+    
+    .paybowpt{
+        margin-right: -500px;
+    }
+   
+    .main__check a {
+      
+        width: 100px;
+    }
+   
 }

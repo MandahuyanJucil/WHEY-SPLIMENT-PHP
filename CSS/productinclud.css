@@ -53,7 +53,7 @@ body{
 
 
 .main{
-    max-height: 700vh;
+    max-height: 1700vh;
     height: auto;
     background-image: radial-gradient(black,rgb(39, 36, 36),rgb(55, 45, 45));
    
@@ -93,6 +93,7 @@ form{
     width: 100px;
     height: 100px;
     margin-top:20px ;
+    mix-blend-mode: multiply;
 }
 
 

@@ -1,7 +1,9 @@
+
+
 <?php 
 session_start();
 $product_ids=array();
-
+/* session_destroy(); */
 
 if(filter_input(INPUT_POST,'add_to_cart')){
     if(isset($_SESSION['shopping_cart'])){
@@ -42,23 +44,30 @@ if(filter_input(INPUT_POST,'add_to_cart')){
       }
       $_SESSION['shopping_cart'] = array_values($_SESSION['shopping_cart']);
     }
-    
 ?>
  
 
-<?php include 'inc/header.php'?>
-
-<link rel="stylesheet" href="/WHEY SUPPLIMENT/CSS/receipt.css">
-<script defer src="/WHEY SUPPLIMENT/JS/cart.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/loginsystem/CSS/main.css">
+    <script defer src="/loginsystem/JS/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+ <h1 class="header__h1">this is header</h1>
+</header>
 
 <main class="main">
 
+
     <div class="main__wraper">
-    <div class="main__firstdiv">
-                  <h1>PAYMENT SUCCESS!</h1>
-         </div> 
+     
     <?php 
-      include 'newcart/dataconn.php';
+      include 'dataconn.php';
     
        $query ="SELECT * FROM cart";
        $stm=$pdo->prepare($query);
@@ -70,14 +79,19 @@ if(filter_input(INPUT_POST,'add_to_cart')){
 
     
            
+      </div>
 
-      <table>
+</main>
+
+<footer class="footer">
+
+<table>
             <tr>
                 <th>Product Name</th>
                 <th>Quantity</th>
                 <th>Price</th>
-                <th colspan="2">Total</th>
-                <th></th>
+                <th>Total</th>
+                <th>Action</th>
             </tr>
 
 
@@ -91,25 +105,34 @@ if(!empty( $_SESSION['shopping_cart'])):
 ?>
 <tr>
   
-  <td><h6 class="main__tabledata"><?php  echo $product['name']; ?></h6></td>
-  <td><h6 class="main__tabledata"><?php  echo $product['quantity']; ?></h6></td>
-  <td><h6 class="main__tabledata"><?php  echo number_format($product['price'],2); ?></h6></td>
-  <td><h6 class="main__tabledata"><?php  echo number_format($product['price'] * $product['quantity'],2); ?></h6></td>
-  
+  <td><?php  echo $product['name']; ?></td>
+  <td><?php  echo $product['quantity']; ?></td>
+  <td><?php  echo number_format($product['price'],2); ?></td>
+  <td><?php  echo number_format($product['price'] * $product['quantity'],2); ?></td>
+  <td><a href="cartversion2.php?action=delete&id=<?php echo $product['id']?>"><h6>remove</h6></a></td>
 </tr>
 <?php 
   $total=$total+($product['quantity']*$product['price']);
 endforeach;
 ?>
 <tr>
-  <td colspan="3"></td>
-   <td colspan=""><h6 class="main__tabledata">TOTAL:<?php echo number_format($total,2); ?></h6></td>
-
+   <td>TOTAL</td>
+   <td><?php echo number_format($total,2); ?></td>
+   <td></td>
 </tr>
-
+<tr>
+  <td>
+    <?php  
+     if (isset($_SESSION['shopping_cart'])):
+      if(count($_SESSION['shopping_cart'])>0):
+      ?>
+      <a href="#">Checkout</a>
+      <?php endif; endif; ?>
+  </td>
+</tr>
 <?php endif; ?>
 </table>
-<div class="closereceipt">
-  <a href="main.php?action=paynow"><h4 class="h4close">CLOSE</h4></a>
-</div>
-</div>  
+<a href="/WHEY SUPPLIMENT//HTML/newcart/cartupdate.php">cart</a>
+</footer> 
+</body>
+</html>
