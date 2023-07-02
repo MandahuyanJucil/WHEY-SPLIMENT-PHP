@@ -124,7 +124,7 @@ function invalidemail($email){
     exit();
           }
 
-          
+        
           $passwordHashed = $uidExists["usersPwd"];
           $checkpassword = password_verify( $password, $passwordHashed);
 
@@ -136,10 +136,13 @@ function invalidemail($email){
           }
 
           else if($checkpassword === true){
-
+          
             session_start();
-            $_SESSION["userid"] = $uidExists["userId"];
+            
+            $_SESSION["ids"] = $uidExists["usersId"];
             $_SESSION["useruid"] = $uidExists["usersUid"];
+       
+
             header("location:/WHEY SUPPLIMENT/HTML/main.php");
             exit();
           }

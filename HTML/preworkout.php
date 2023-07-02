@@ -62,7 +62,6 @@ if(filter_input(INPUT_POST,'add_to_cart')){
 ?>
 
 
-<script defer src="/WHEY SUPPLIMENT/JS/allproduct.js"></script>
 
 <main class="main">
            
@@ -78,7 +77,7 @@ if(filter_input(INPUT_POST,'add_to_cart')){
   <div class="main_container">
 
          <div class="main__product">
-
+    
          
          
 
@@ -173,29 +172,6 @@ if(filter_input(INPUT_POST,'add_to_cart')){
     
 </div>
 
-<?php 
-if(isset($_GET['action'])){
-
-  if($_GET['action']== "clearall"){
-    unset($_SESSION['cart']);
-    
-  }
-
-  if($_GET['action']== "remove"){
-    foreach ($_SESSION['cart'] as $key => $value){
-
-      if($value['id']==$_GET['id']){
-        unset($_SESSION['cart'][$key]);
-      }
-    }
-  }
-
-  
-
-}
-
-
-?>
 
 
 <div class="main__firstdiv__buynow  ">

@@ -55,7 +55,7 @@
         <?Php  
              
              if(isset($_SESSION["useruid"])){ 
-                   echo "<a id='user' href='/WHEY SUPPLIMENT/HTML/profile.php'> <h4 class='header__firstdiv__fourth__name'>".$_SESSION["useruid"]."</h4></a>";
+                   echo "<a id='user' href='profile.php'> <h4 class='header__firstdiv__fourth__name'>".$_SESSION["useruid"]."</h4></a>";
                  
                    
              }
@@ -85,8 +85,8 @@
              if(isset($_SESSION["useruid"])){ 
                    echo "<li class='header__seconddiv__li'> <a href='/WHEY SUPPLIMENT/HTML/main.php'>Home</a></li>";
                    echo "<li class='header__seconddiv__li'><a href='/WHEY SUPPLIMENT/database/logout.php'>log out</a></li>";
-                   echo "<li class='header__seconddiv__li'><a href='/WHEY SUPPLIMENT/HTML/profile.php'>Profile</a></li>";
-                   
+                   echo "<li class='header__seconddiv__li'><a href='/WHEY SUPPLIMENT/HTML/mainprofile.php?id=".$_SESSION["ids"]."'>profile</a></li>";
+              
              }
               else  {
               echo "<li class='header__seconddiv__li'> <a href='/WHEY SUPPLIMENT/HTML/main.php'>Home</a></li>";

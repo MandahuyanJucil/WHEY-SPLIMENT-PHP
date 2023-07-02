@@ -14,7 +14,7 @@ body{
     max-height: 1300vh;
     
     font-family: 'Roboto', sans-serif;
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245);
     
 }
 
@@ -65,7 +65,7 @@ body{
 }
 
 .main__firstdiv{
-    margin-top: 90px;
+    margin-top: 50px;
     max-height: 700vh;
     height: auto;
     display: flex;
@@ -336,8 +336,7 @@ select{
     width: 100%;
     height: 120px;
     color: white;
-    
- 
+    margin-top: 50px;
 }
 
 .main__arrow i {

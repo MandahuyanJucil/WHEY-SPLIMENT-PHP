@@ -100,7 +100,7 @@ if(!empty( $_SESSION['shopping_cart'])):
   <td><h6 class="main__tabledata"><?php  echo $product['quantity']; ?></h6></td>
   <td><h6 class="main__tabledata"><span>&#8369;</span> <?php  echo number_format($product['price'],2); ?></h6></td>
   <td><h6 class="main__tabledata"><span>&#8369;</span> <?php  echo number_format($product['price'] * $product['quantity'],2); ?></h6></td>
-  <td><a href="cart.php?action=delete&id=<?php echo $product['id']?>"><h6 class="main__tabledata"><i style='font-size:24px' class='fas'>&#xf2ed;</i></h6></a></td>
+  <td><a href="cart.php?action=delete&id=<?php echo $product['id']?>"><h6 class="main__tabledata trashbin"><i style='font-size:24px' class='fas'>&#xf2ed;</i></h6></a></td>
 </tr>
 <?php 
   $total=$total+($product['quantity']*$product['price']);
@@ -108,7 +108,7 @@ endforeach;
 ?>
 <tr>
   <td colspan="3"></td>
-   <td colspan=""><h6 class="main__tabledata">TOTAL:<span>&#8369;</span><?php echo number_format($total,2); ?></h6></td>
+   <td colspan=""><h6 class="main__tabledata totalprice">TOTAL:<span>&#8369;</span><?php echo number_format($total,2); ?></h6></td>
    <td>
 
     <?php  

@@ -58,7 +58,6 @@ include 'inc/header.php'
 ?>
 
 
-<script defer src="/WHEY SUPPLIMENT/JS/allproduct.js"></script>
 
 <main class="main">
            
@@ -169,29 +168,6 @@ include 'inc/header.php'
     
 </div>
 
-<?php 
-if(isset($_GET['action'])){
-
-  if($_GET['action']== "clearall"){
-    unset($_SESSION['cart']);
-    
-  }
-
-  if($_GET['action']== "remove"){
-    foreach ($_SESSION['cart'] as $key => $value){
-
-      if($value['id']==$_GET['id']){
-        unset($_SESSION['cart'][$key]);
-      }
-    }
-  }
-
-  
-
-}
-
-
-?>
 
 
 <div class="main__firstdiv__buynow  ">

@@ -59,23 +59,25 @@ img{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 70px;
-    box-shadow: var(--boxsh);
+    margin-top: 70px;   
     overflow: hidden;
     border-radius: 31px;
     border-radius: 31px;
-    background: #4e484e;
+    background: #383238;
     box-shadow: inset -40px 40px 26px #333132,
             inset 40px -40px 26px #1c1b1b;
             max-width: 400px;
     width: 400px;
     min-width: 400px;
+    height:auto;
     max-height: 100vh;
+    min-height: 200px;
     height:600px;
 }
 
 .main__firstdiv__container img {
     width: 400px;
+    height: 300px;
 }
 
 .main__firstdiv{
