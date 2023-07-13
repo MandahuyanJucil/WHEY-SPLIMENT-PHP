@@ -74,8 +74,13 @@
 
                  
                  echo'
+                 <div class="main__button">
+                    <a href="mainprofile.php"> <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> </a>
+                </div>
+                  <h2 class="editprofile">Edit Your Profile</h2>
+                
                   <form  class="informationform" method="post" enctype="multipart/form-data">
-                   
+                
                     <input type="file" name="file" id="profile" hidden="hidden">
                     <button id="changeprofile">Choose Profile</button> <p id="customtext">No file</p>
 
@@ -83,10 +88,10 @@
                     <input type="text" name="address" id="address" class="inputfailed" required>
 
                     <label for="gcash">Gcash<label>
-                    <input type="tel" name="gcashnumber" id="gcash" class="inputfailed" required>
+                    <input type="tel" name="gcashnumber" id="gcash" class="inputfailed" >
 
                     <label for="cellphone">Phone#<label>
-                    <input type="tel" name="contactnumber" id="cellphone" class="inputfailed" required>
+                    <input type="tel" name="contactnumber" id="cellphone" class="inputfailed" >
 
                     <input type="submit" name="upload"  class="buttonbtn" value="upload">
                    </form>

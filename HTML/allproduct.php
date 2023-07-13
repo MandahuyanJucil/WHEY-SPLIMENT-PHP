@@ -28,6 +28,7 @@ if(filter_input(INPUT_POST,'add_to_cart')){
               }
            }
     }
+    
     else{
       $_SESSION['shopping_cart'][0]=array(
        'id'=>filter_input(INPUT_GET,'id'),

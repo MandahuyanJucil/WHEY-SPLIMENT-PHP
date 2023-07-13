@@ -182,14 +182,18 @@ endforeach;
   <?php endif; endif; ?>
   
 </td> 
-<td colspan="2"><h6 class="main__tabledata"><label for="gender">Payment:</label>  <select id="gender">
-        <option>COD</option>
-        <option>GCASH</option>
-        
-</select></h6>
+<td colspan="2"><h6 class="main__tabledata"> 
+        <form action="receipt.php">
+          <label for="gcashorder">GCASH</label>
+          <input type="radio" name="order"  id="gcashorder" value="gcashorder" checked >
+          <label for="cashondelivery">COD</label>
+          <input type="radio" name="order" id="cashondelivery" value="cashondelivery" >
+       
+</h6>
 </td> 
 
-<td colspan="2"><a href="receipt.php"><h6 class="main__tabledata paynow">PAY NOW<h6></a> </td> 
+<td colspan="2"><button class="btnpaynow" type="submit"><h6 class="main__tabledata paynow">PAY NOW<h6></button> </td> 
+</form>
 </tr>
 
 <?php endif; ?>

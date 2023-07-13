@@ -231,7 +231,7 @@ form button{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #06cbc8;
+    
     color:white;
     margin-left: -120px;
     font-size: 30px;
@@ -239,13 +239,11 @@ form button{
     width: 150px;
     height: 70px;
     border-radius: 131px;
-background: #06cbc8;
-box-shadow: inset -9px 9px 21px #025150,
-            inset 9px -9px 21px #0affff;
+
 }
 
 .header__firstdiv__fourth__name a{
-  background-color: aqua;
+
 }
 
 .header__seconddiv__open{
@@ -306,6 +304,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
     color: white;
      background-color: black;
      height: 20vh;
@@ -314,6 +313,77 @@ a{
     
     max-height: 100vh;
 }
+
+.footer__firstdiv__h2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer__firstdiv__h2 h3{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.footer__info{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+}
+
+.footer__info i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color:white;    
+    margin-right: 100px;
+}
+
+#red{
+    color: red;
+    border: 2px white solid;
+    border-radius: 8px;
+}
+
+#blue{
+    color: blue;
+    border: 2px white solid;
+    border-radius: 12px;
+
+}
+
+#rd{
+    border: 2px white solid;
+    border-radius: 9px;
+    color: rgba(255, 127, 225, 0.405);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -531,7 +601,7 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #06cbc8;
+     
         color:white;
         margin-left: -250px;
         font-size: 15px;
@@ -539,9 +609,7 @@ a{
         width: 90px;
         height: 40px;
         border-radius: 131px;
-    background: #06cbc8;
-    box-shadow: inset -9px 9px 21px #025150,
-                inset 9px -9px 21px #0affff;
+
     }
 
     

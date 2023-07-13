@@ -106,6 +106,47 @@ endforeach;
    <td colspan=""><h6 class="main__tabledata">TOTAL:<?php echo number_format($total,2); ?></h6></td>
 
 </tr>
+<tr>
+   <?php  
+     
+     include 'inc/pdologin.php';
+    
+     include 'profileaction.php';
+
+     $address=$result['address'];
+     $gcash=$result['gcash'];
+     $cellphonenumber=$result['cellphonenumber'];
+      
+    if($_GET['order']=='gcashorder'){
+      if(!empty($gcash)){
+      echo'<tr>';
+      echo'<td colspan="4"><h6 class="main__tabledata">Payment Method:Gcash</h6></td>';
+      echo'</tr>';
+      echo'<td colspan="4"><h6 class="main__tabledata">Gcash Number:'.$gcash.'</h6></td>';
+      }
+      else {
+        header('location:profile.php?id='.$_SESSION["ids"].'');
+      }
+    }
+    
+    else if($_GET['order']=='cashondelivery'){
+      if(!empty($address) & !empty($cellphonenumber)){
+      echo'<tr>';
+      echo'<td colspan="4"><h2 class="main__tabledata">Payment Method:Cash ON Delivery </h2></td>';
+      echo'</tr>';
+      echo'<td colspan="4"><h6 class="main__tabledata">Address:'.$address.'</h6></td>';
+      echo'<tr>';
+      echo'<td colspan="4"><h6 class="main__tabledata">Cellphone Number:'.$cellphonenumber.'</h6></td>';
+      echo'</tr>';
+      }
+
+      else {
+        header('location:profile.php?id='.$_SESSION["ids"].'');
+      }
+    }
+   
+   ?>
+</tr>
 
 <?php endif; ?>
 </table>

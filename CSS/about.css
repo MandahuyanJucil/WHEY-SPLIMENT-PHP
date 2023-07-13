@@ -50,12 +50,16 @@ body{
 }
 
 
-
+.main__first__top img{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
 
 .main{
     max-height: 700vh;
     height: auto;
-    background-color:orange;
+    background-image: radial-gradient(rgb(165, 165, 165),rgb(100, 97, 97),black);
 }
 
 .h1{
@@ -109,7 +113,8 @@ body{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center ;
-    font-size: 20px;
+    font-size: 25px;
+    color: white;
 }
 
 .main__first__info__icon{

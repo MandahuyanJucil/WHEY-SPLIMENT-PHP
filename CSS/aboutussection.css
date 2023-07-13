@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    max-height: 1300vh;
+    
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    
+}
+
+:root{
+    
+    /* FONTSIZE */
+    --fsS:15px;
+    --fsM:25px;
+    --fsL:35px;
+    --fsXL:55px;
+
+    /* FONTSTYLE */
+    --ff:'Roboto', sans-serif;
+
+    /* MARGIN */
+    --mrS:10px;
+    --mrM:20px;
+    --mrL:30px;
+    --mrXL:10px;
+
+    /* PADDING */
+    --pdS:15px;
+    --pdM:15px;
+    --pdL:15px;
+    --pdXL:15px;
+
+    /* BACKROUND COLOR */
+    
+
+
+
+    /* BOXSHADOW */
+    --txtsh: 0px -1px 1px;
+    --boxsh: 0px 0px 2px white;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+  
+
+   
+}
+
+.main__wraper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: radial-gradient(black,rgb(39, 36, 36),rgb(55, 45, 45)); 
+    max-height: 700vh;
+    min-height: 170vh;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+.main__arrow{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width:100%;
+    height: auto;
+    margin-top: 60px;
+}
+
+.main__arrow a{
+    margin-left: 70px;
+}
+
+.main__wraper h1{
+    margin-top: 20px;
+    color: whitesmoke;
+}
+
+.main__wraper p{
+    font-size: 20px;
+    text-align: justify;
+    height: auto;
+    width: 90%;
+    color: white;
+    margin-bottom: 40px;
+}

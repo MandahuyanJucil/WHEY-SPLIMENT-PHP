@@ -119,10 +119,10 @@ border: 5px black double;
 
 .main__contactinfo{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
-    flex-direction: column;
-    background-color: blue;
+    flex-direction: row;
+    background-color:gray;
     width: 100%;
     height: auto;
 }
@@ -135,9 +135,7 @@ border: 5px black double;
     
 }
 
-.main__address h4{
-    color: rgb(0, 0, 0);
-}
+
 
 .main__number{
     display: flex;
@@ -147,11 +145,32 @@ border: 5px black double;
 
 }
 
-.main__number h4{
-    color:rgb(0, 0, 0) ;
-}
+
 
 .main__contactinfo h2{
     font-size: 40px;
     color: rgb(0, 0, 0);
+}
+
+.main__name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.main__name h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: whitesmoke;
+    font-size:25px;
+    border-radius: 5px;
+    border: black 2px solid;
+}
+
+.name{
+    color: rgb(51, 36, 164);
 }

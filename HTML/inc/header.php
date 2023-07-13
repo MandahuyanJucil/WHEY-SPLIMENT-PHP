@@ -3,6 +3,8 @@
  session_start();
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,7 +57,7 @@
         <?Php  
              
              if(isset($_SESSION["useruid"])){ 
-                   echo "<a id='user' href='profile.php'> <h4 class='header__firstdiv__fourth__name'>".$_SESSION["useruid"]."</h4></a>";
+                   echo "<a id='user' href='mainprofile.php'> <h4 class='header__firstdiv__fourth__name'>".$_SESSION["useruid"]."</h4></a>";
                  
                    
              }
@@ -72,7 +74,7 @@
           
  
         </div>
-          <h2 class="header__firstdiv__fifth__h2"><a href="/WHEY SUPPLIMENT/HTML/aboutus.php"> About Us</a></h2>
+          <h2 class="header__firstdiv__fifth__h2"><a href="/WHEY SUPPLIMENT/HTML/aboutus.php">Developers</a></h2>
         </div>
 
       </div>

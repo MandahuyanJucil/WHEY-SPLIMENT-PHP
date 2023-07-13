@@ -50,6 +50,8 @@
 
  
       include 'profileaction.php';
+      $email=$result['usersEmail'];
+      $name=$result['usersName'];
       $address=$result['address'];
       $gcash=$result['gcash'];
       $cellphonenumber=$result['cellphonenumber'];
@@ -85,18 +87,24 @@
                 ?>
            
             </div>
-            <div class="main__name"> <h3 class="username"><?php echo $_SESSION["useruid"]; ?></h3></div>
+            <div > <h3 class="username"><?php echo $_SESSION["useruid"]; ?></h3></div>
             <div class="main__seeting">
                 <a href='profile.php?id=<?php echo $_SESSION["ids"];?>'> <i class="fa fa-cog" aria-hidden="true"></i></a> 
             </div>
         </div>
          <div class="main__contactinfo">
-              <h2>Other Information</h2>
-              <div class="main__address">
-                <h3>Address:</h3><h4 class="address"><?php echo  $address ?></h4>
+             
+              <div class="main__name">
+                <h3>Name</h3><h4 class="name"><?php echo  $name ?></h4>
               </div>
-              <div class="main__number">
-                <h3>Mobile Number:</h3><h4 class="number"><?php echo  $cellphonenumber ?></h4>
+              <div class="main__name">
+                <h3>Gmail</h3><h4 class="name"><?php echo $email ?></h4>
+              </div>
+              <div class="main__name">
+                <h3>Address</h3><h4 class="name"><?php echo  $address ?></h4>
+              </div>
+              <div class="main__name">
+                <h3>Mobile Number</h3><h4 class="name"><?php echo  $cellphonenumber ?></h4>
               </div>
          </div>
         

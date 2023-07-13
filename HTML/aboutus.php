@@ -14,7 +14,7 @@
            
            <div class="main__firtsdiv">
               <div class="main__first__top">
-                <img src="/WHEY SUPPLIMENT/IMG/Backuplogo.png" alt="prodilepicture">
+                <img src="uploads/mandahuyan.jpg" alt="prodilepicture">
              
               <div class="main__first__info">
                    <ul class="main__first__info__ul">
@@ -32,13 +32,13 @@
              </div>
 
              <div class="main__first__top">
-                <img src="/WHEY SUPPLIMENT/IMG/Backuplogo.png" alt="prodilepicture">
+                <img src="uploads/pagala.jpg" alt="prodilepicture">
              
               <div class="main__first__info">
                    <ul class="main__first__info__ul">
                       <li class="main__first__info__li">Name:<h5>Reyanjames Pagala</h5></li>
                       
-                      <li class="main__first__info__li">Age:<h5></h5></li>
+                      <li class="main__first__info__li">Age:<h5>20</h5></li>
                       <li class="main__first__info__li">Email:<h5><h5></li>
                    </ul>
                    <div class="main__first__info__icon">
@@ -50,13 +50,13 @@
              </div>
 
              <div class="main__first__top">
-                <img src="/WHEY SUPPLIMENT/IMG/Backuplogo.png" alt="prodilepicture">
+                <img src="uploads/valderama.jpg" alt="prodilepicture">
              
               <div class="main__first__info">
                    <ul class="main__first__info__ul">
                       <li class="main__first__info__li">Name:<h5>John Michael Valderama</h5></li>
                       
-                      <li class="main__first__info__li">Age:<h5></h5></li>
+                      <li class="main__first__info__li">Age:<h5>20</h5></li>
                       <li class="main__first__info__li">Email:<h5><h5></li>
                    </ul>
                    <div class="main__first__info__icon">

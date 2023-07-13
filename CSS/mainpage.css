@@ -59,7 +59,8 @@ img{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 70px;   
+    margin-top: 190px;   
+    margin-bottom: 190px;   
     overflow: hidden;
     border-radius: 31px;
     border-radius: 31px;
@@ -365,7 +366,7 @@ align-items: center;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        margin-top: 70px;
+        margin-top: 140px;
         box-shadow: var(--boxsh);
         overflow: hidden;
         border-radius: 31px;
@@ -374,10 +375,23 @@ align-items: center;
         box-shadow: inset -40px 40px 26px #8d8489,
                 inset 40px -40px 26px #ffffff;
                 max-width: 400px;
-        width: 300px;
+        width: 400px;
         height: auto;
         min-width: 100px;
         max-height: 100vh;
+       
+    }
+
+    .main__contianerpicture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main__contianerpicture h4{
+        color: black;
+       
     }
 
     .main__firstdiv{

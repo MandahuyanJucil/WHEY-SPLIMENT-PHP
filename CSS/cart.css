@@ -123,6 +123,7 @@ background-color: rgb(21, 170, 36);
 color: white;
 height: 30px;
 width: 100%;    
+cursor: pointer;
 }
 
 #check{
@@ -138,6 +139,8 @@ width: 100%;
     color: rgb(0, 0, 0);
     background-color: rgb(251, 0, 0);
 }
+
+
 
 
 
